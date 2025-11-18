@@ -2,8 +2,8 @@
   background-color: #1d224f;
   overflow: hidden;
   width: 100%;
-  min-width: 1440px;
-  min-height: 1024px;
+  min-width: 1920px;
+  min-height: 1080px;
   position: relative;
 }
 
@@ -286,7 +286,7 @@
   position: absolute;
   width: 835px;
   height: 287px;
-  top: 254px;
+  top: 50px;
   left: 437px;
   display: flex;
 }
@@ -397,7 +397,7 @@
   width: 835px;
   height: 287px;
   top: 557px;
-  left: 448px;
+  left: 437px;
   display: flex;
 }
 
@@ -732,9 +732,9 @@
 }
 
 .desktop .applications-content {
-  position: absolute;
+  position: relative;
   top: 254px;
-  left: 437px;
+  left: 400px;
   width: 835px;
 }
 

@@ -1,8 +1,8 @@
 .desktop {
   background-color: #0f182b;
   width: 100%;
-  min-width: 1440px;
-  min-height: 1024px;
+  min-width: 1920px;
+  min-height: 1080px;
   position: relative;
 }
 
@@ -552,12 +552,9 @@
 
 .search-icon {
   position: absolute;
-  top: 11px;
-  left: 39px;
-  width: 29px;
-  height: 30px;
-  aspect-ratio: 0.95;
-  object-fit: cover;
+  width: 570px;
+  height: 100px;
+  aspect-ratio: 1;
   pointer-events: none;
 }
 
