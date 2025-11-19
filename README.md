@@ -12,7 +12,7 @@ Our Connect Platform bridges the gap between students searching for internships/
 2. Student Dashboard (StudentDashboard.html)
 3. Company Dashboard (CompanyDashboard.html)
 4. Project Listings (ProjectListings.html)
-## Bonus Pages
+### Bonus Pages
 5. About Page (AboutUs.html)
 6. Resources Page (Resources.html)
 ## Technologies Used
