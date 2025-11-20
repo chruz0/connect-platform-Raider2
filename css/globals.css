@@ -1,18 +1,28 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* Imports a CSS reset to remove browser default styles */
+
+
 * {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+-webkit-font-smoothing: antialiased; /* Makes text render cleaner on WebKit browsers */
+box-sizing: border-box; /* Ensures width/height include padding + border */
 }
+
+
 html,
 body {
-  margin: 0px;
-  height: 100%;
+margin: 0; /* Removes default outer spacing */
+height: 100%; /* Ensures full-height layout if needed */
 }
-/* a blue color as a generic focus style */
+
+
+/* Generic focus style for buttons (keyboard accessibility) */
 button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+outline: 2px solid #4a90e2 !important; /* Blue focus ring */
+outline: -webkit-focus-ring-color auto 5px !important;
 }
+
+
+/* Remove underlines globally (we style links manually in index.css) */
 a {
-  text-decoration: none;
+text-decoration: none;
 }

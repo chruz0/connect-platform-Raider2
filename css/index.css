@@ -1,595 +1,306 @@
-
-
-.desktop {
-  background-color: #1c214f7d;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #000000;
-  width: 100%;
-  min-width: 1920px;
-  min-height: 1080px;
-  position: relative;
+/* Make <html> and <body> take up the full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;                /* Remove default body margin */
 }
 
-.desktop .image {
-  top: 82px;
-  left: 19px;
-  width: 1362px;
-  height: 907px;
-  aspect-ratio: 1.5;
-  position: absolute;
-  object-fit: cover;
+/* <main class="container"> will act as the vertical layout box */
+.container {
+  display: flex;            /* Enables vertical stacking */
+  flex-direction: column;   /* Stack children from top to bottom */
+  min-height: 100vh;        /* Make container fill the entire screen height */
 }
 
-.desktop .img {
-  top: 0;
-  left: 0;
-  width: 295px;
-  height: 82px;
-  aspect-ratio: 3.56;
-  position: absolute;
-  object-fit: cover;
+/* Push the footer to the bottom by consuming leftover vertical space */
+.footer {
+  margin-top: auto;         /* Works because .footer is now a flex item of .container */
 }
 
-.desktop .UI {
-  position: absolute;
-  top: 0;
-  left: 409px;
-  width: 802px;
-  height: 1061px;
+
+
+/* index.css WITH EXPLANATORY COMMENTS */
+/* 4. USER SELECTION */
+/* --------------------------------------------------- */
+
+
+.user-selection {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.desktop .text-wrapper {
-  position: absolute;
-  top: 310px;
-  left: 236px;
-  width: 392px;
-  text-shadow: 3px 7px 14px #000000d6;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
+
+.user-selection h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
 }
 
-.desktop .rectangle {
-  position: absolute;
-  top: 373px;
-  left: 4px;
-  width: 129px;
-  height: 42px;
-  background-color: #e6aa27;
-  border: 0px none;
-  box-shadow: 3px 7px 14px #000000d6;
-}
 
-.desktop .mask-group {
-  position: absolute;
-  top: 363px;
-  left: 286px;
-  width: 69px;
-  height: 64px;
-  box-shadow: 3px 7px 14px #000000d6;
-}
-
-.desktop .ellipse {
-  position: absolute;
-  top: -3px;
-  left: 2px;
-  width: 65px;
-  height: 69px;
-  background-color: #b13333;
-  border-radius: 32.35px / 34.69px;
-  border: 1px solid;
-  border-color: #000000;
-  transform: rotate(-91.04deg);
-  box-shadow: 0px 4px 4px #00000040;
-  opacity: 0.9;
-}
-
-.desktop .div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-  height: 45px;
-  background-color: #241c7d;
-  border-radius: 24.02px / 22.46px;
-}
-
-.desktop .arrow {
-  position: absolute;
-  top: 378px;
-  left: 136px;
-  width: 118px;
-  height: 43px;
-}
-
-.desktop .rectangle-2 {
-  position: absolute;
-  top: 387px;
-  left: 133px;
-  width: 14px;
-  height: 16px;
-  background-color: #dc2222;
-  box-shadow: 3px 7px 14px #000000d6;
-}
-
-.desktop .text-wrapper-2 {
-  position: absolute;
-  top: 510px;
-  left: 209px;
-  width: 269px;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .rectangle-3 {
-  position: absolute;
-  top: 593px;
-  left: 161px;
-  width: 269px;
-  height: 66px;
+/* Button styling for Student/Recruiter */
+.btn {
+  display: block; /* Makes link behave like a block button */
+  width: 250px;
+  margin: 15px auto;
+  padding: 15px 0;
   background-color: #0e0232;
-  border-radius: 101px;
-  border: 1px solid;
-  border-color: #171143;
-}
-
-.desktop .rectangle-4 {
-  position: absolute;
-  top: 698px;
-  left: 168px;
-  width: 269px;
-  height: 66px;
-  background-color: #0e0232;
-  border-radius: 101px;
-  border: 1px solid;
-  border-color: #171143;
-}
-
-.desktop .text-wrapper-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-4 {
-  position: absolute;
-  top: 968px;
-  left: 192px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-5 {
-  position: absolute;
-  top: 968px;
-  left: 594px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-6 {
-  position: absolute;
-  top: 684px;
-  left: 212px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-7 {
-  position: absolute;
-  top: 579px;
-  left: 218px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-8 {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .text-wrapper-9 {
-  position: absolute;
-  top: 0;
-  left: 599px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-/* Inject original globals.css styles here */
-
-.desktop {
-  background-color: #1c214f7d;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #000000;
-  width: 100%;
-  min-width: 1402px;
-  min-height: 1049px;
-  position: relative;
-}
-
-.desktop .image {
-  top: 82px;
-  left: 19px;
-  width: 1362px;
-  height: 907px;
-  aspect-ratio: 1.5;
-  position: absolute;
-  object-fit: cover;
-}
-
-.desktop .img {
-  top: 0;
-  left: 0;
-  width: 295px;
-  height: 82px;
-  aspect-ratio: 3.56;
-  position: absolute;
-  object-fit: cover;
-}
-
-.desktop .UI {
-  position: absolute;
-  top: 0;
-  left: 409px;
-  width: 802px;
-  height: 1061px;
-}
-
-.desktop .navigation {
-  position: relative;
-  width: 100%;
-  height: 82px;
-}
-
-.desktop .text-wrapper {
-  position: absolute;
-  top: 310px;
-  left: 236px;
-  width: 392px;
-  text-shadow: 3px 7px 14px #000000d6;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin: 0;
-}
-
-.desktop .rectangle {
-  position: absolute;
-  top: 373px;
-  left: 4px;
-  width: 129px;
-  height: 42px;
-  background-color: #e6aa27;
-  border: 0px none;
-  box-shadow: 3px 7px 14px #000000d6;
-}
-
-.desktop .mask-group {
-  position: absolute;
-  top: 363px;
-  left: 286px;
-  width: 69px;
-  height: 64px;
-  box-shadow: 3px 7px 14px #000000d6;
-}
-
-.desktop .ellipse {
-  position: absolute;
-  top: -3px;
-  left: 2px;
-  width: 65px;
-  height: 69px;
-  background-color: #b13333;
-  border-radius: 32.35px / 34.69px;
-  border: 1px solid;
-  border-color: #000000;
-  transform: rotate(-91.04deg);
-  box-shadow: 0px 4px 4px #00000040;
-  opacity: 0.9;
-}
-
-.desktop .div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-  height: 45px;
-  background-color: #241c7d;
-  border-radius: 24.02px / 22.46px;
-}
-
-.desktop .arrow {
-  position: absolute;
-  top: 378px;
-  left: 136px;
-  width: 118px;
-  height: 43px;
-}
-
-.desktop .rectangle-2 {
-  position: absolute;
-  top: 387px;
-  left: 133px;
-  width: 14px;
-  height: 16px;
-  background-color: #dc2222;
-  box-shadow: 3px 7px 14px #000000d6;
-}
-
-.desktop .hero-section {
-  position: relative;
-}
-
-.desktop .user-selection {
-  position: relative;
-}
-
-.desktop .footer-navigation {
-  position: relative;
-}
-
-.desktop .text-wrapper-2 {
-  position: absolute;
-  top: 510px;
-  left: 209px;
-  width: 269px;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin: 0;
-}
-
-.desktop .rectangle-3 {
-  position: absolute;
-  top: 593px;
-  left: 161px;
-  width: 269px;
-  height: 66px;
-  background-color: #0e0232;
-  border-radius: 101px;
-  border: 1px solid;
-  border-color: #171143;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #171143;
+  border-radius: 100px;
+  color: white;
+  font-size: 24px;
   text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.desktop .rectangle-3:hover {
+
+/* Hover effect for buttons */
+.btn:hover {
   background-color: #1a0a4a;
-  transform: scale(1.02);
+  transform: scale(1.5); /* Slight pop animation */
 }
 
-.desktop .rectangle-3:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+
+
+/* --------------------------------------------------- */
+/* 5. HEADER & NAVIGATION */
+/* --------------------------------------------------- */
+
+@font-face {
+  font-family: 'Inknut Antiqua';
+  src: url(https://fonts.google.com/specimen/Inknut+Antiqua);
 }
 
-.desktop .rectangle-4 {
-  position: absolute;
-  top: 698px;
-  left: 168px;
-  width: 269px;
-  height: 66px;
-  background-color: #0e0232;
-  border-radius: 101px;
-  border: 1px solid;
-  border-color: #171143;
+.header, .footer{
+  display: flex;              /* Put logo and navbar side-by-side */
+  align-items: center;        /* Vertically center them */
+  justify-content: space-between; /* Space logo left, nav right */
+  background: #12152c;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;               /* Optional: control logo size */
+  transition: .2s;
+}
+
+.logo:hover {
+  outline: 3px solid white;
+  box-shadow: -5px 5px 100px 5px black;
+}
+
+.navbar {
+  background: none;
+  padding: 10px;
   display: flex;
+  gap: 100px;
+}
+
+.navbar a, .footer a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;   /* Makes each link a rectangle */
+  background: #292e5a;
+  border-radius: 4px;
+  font-family: 'Inknut Antiqua';
+  transition: transform 0.2s, box-shadow 0.4s;
+}
+
+.navbar a:hover, .footer a:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 50px 2px black;
+}
+
+
+
+/* --------------------------------------------------- */
+/* 7. HERO SECTION */
+/* --------------------------------------------------- */
+
+body {
+  background-image: url(../img/indexpagebg.png);
+  background-size: cover;
+  background-repeat: no-repeat;  /* Prevents repetition */
+  background-position: center;   /* Keeps focus centered */
+  background-attachment: fixed;  /* Parallax-like effect */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Horizontal centering */
+  justify-content: center; /* Vertical centering (optional) */
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  color: white;
+}
+
+.accent-bar {
+  width: 200px;
+  height: 100px;
+  background-color: #e6aa27;
+  border: 1px solid white;
+  align-self: center;
+}
+
+/* Centers the whole structure and stacks the elements vertically */
+.connect-logo {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 100px;
+  margin-bottom: 40px; /* space before user-selection content */
+  width: max-content;   /* shrink-wrap content */
 }
 
-.desktop .rectangle-4:hover {
-  background-color: #1a0a4a;
-  transform: scale(1.02);
+/* Yellow rectangle */
+.yellow-rect {
+  width: 150px;     /* adjust to match your design */
+  height: 50px;
+  background-color: #FFD53D;  /* yellow resembling the screenshot */
+  border-radius: 4px;
 }
 
-.desktop .rectangle-4:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+/* Red square */
+.red-square {
+  width: 25px;
+  height: 25px;
+  background-color: #E63946; /* warm red */
+  border-radius: 4px;
 }
 
-.desktop .text-wrapper-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
+.blue-line {
+  width: 30px;
+  height: 2px;
+  background-color: blue;
+}
+
+/* Blue arrow pointing right (created using CSS borders) */
+.blue-arrow {
+  width: 0;
+  height: 0;
+
+  /* Creates a triangular arrow shape */
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 25px solid blue; /* blue fill */
+}
+
+/* CONNECT text styling */
+.connect-text {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333; /* adjust depending on background */
+  margin: 0;  /* remove default margin */
+}
+
+.circle {
+  width: 30px;
+  height: 50px;
+  border: 6px solid rgb(143, 0, 0);
+  border-radius: 50%;
+  border-left: 8px solid rgb(143, 0, 0);;
+  border-right: 8px solid rgb(143, 0, 0);;
+  background: rgb(76, 76, 255);
+  box-shadow: 0 0 10px rgb(143, 0, 0), 0 0 20px rgb(143, 0, 0);
+  transform: rotate(15deg);
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* 8. FOOTER */
+/* --------------------------------------------------- */
+
+.footer {
+  margin-top: auto; /* forces footer to bottom */
+}
+
+
+
+/* --------------------------------------------------- */
+/* 9. BASIC RESPONSIVENESS (Option A) */
+/* --------------------------------------------------- */
+
+
+/* When screen width is 768px or smaller (tablet/phone) */
+@media (max-width: 768px) {
+
+
+/* Header elements stack vertically */
+.header {
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Navigation links become closer together */
+.navbar {
+  gap: 20px;
+}
+
+
+/* Title shrinks slightly */
+.hero h1 {
   font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.desktop .text-wrapper-3:hover {
-  color: #e6aa27;
+
+/* Footer links stack vertically */
+.footer {
+  gap: 20px;
+}
 }
 
-.desktop .text-wrapper-3:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+
+
+/* --------------------------------------------------- */
+/* 10. FONTS */
+/* --------------------------------------------------- */
+
+.inknut-antiqua-light {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-4 {
-  position: absolute;
-  top: 968px;
-  left: 192px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
+.inknut-antiqua-regular {
+  font-family: "Inknut Antiqua", serif;
   font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-4:hover {
-  color: #e6aa27;
+.inknut-antiqua-medium {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-4:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+.inknut-antiqua-semibold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-5 {
-  position: absolute;
-  top: 968px;
-  left: 594px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.inknut-antiqua-bold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-5:hover {
-  color: #e6aa27;
+.inknut-antiqua-extrabold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.desktop .text-wrapper-5:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.desktop .text-wrapper-6 {
-  position: relative;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin: 0;
-}
-
-.desktop .text-wrapper-7 {
-  position: relative;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin: 0;
-}
-
-.desktop .text-wrapper-8 {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.desktop .text-wrapper-8:hover {
-  color: #e6aa27;
-}
-
-.desktop .text-wrapper-8:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.desktop .text-wrapper-9 {
-  position: absolute;
-  top: 0;
-  left: 599px;
-  mix-blend-mode: screen;
-  font-family: "Inknut Antiqua-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.desktop .text-wrapper-9:hover {
-  color: #e6aa27;
-}
-
-.desktop .text-wrapper-9:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+.inknut-antiqua-black {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 900;
+  font-style: normal;
 }
