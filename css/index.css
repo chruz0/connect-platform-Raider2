@@ -19,7 +19,7 @@ html, body {
 
 
 /* index.css WITH EXPLANATORY COMMENTS */
-/* 4. USER SELECTION */
+/* 1. USER SELECTION */
 /* --------------------------------------------------- */
 
 
@@ -41,7 +41,7 @@ html, body {
 .btn {
   display: block; /* Makes link behave like a block button */
   width: 250px;
-  margin: 15px auto;
+  margin: 20px auto;
   padding: 15px 0;
   background-color: #0e0232;
   border: 1px solid #171143;
@@ -62,7 +62,7 @@ html, body {
 
 
 /* --------------------------------------------------- */
-/* 5. HEADER & NAVIGATION */
+/* 2. HEADER & NAVIGATION */
 /* --------------------------------------------------- */
 
 @font-face {
@@ -113,7 +113,7 @@ html, body {
 
 
 /* --------------------------------------------------- */
-/* 7. HERO SECTION */
+/* 3. HERO SECTION */
 /* --------------------------------------------------- */
 
 body {
@@ -136,14 +136,6 @@ body {
 .hero h1 {
   font-size: 64px;
   color: white;
-}
-
-.accent-bar {
-  width: 200px;
-  height: 100px;
-  background-color: #e6aa27;
-  border: 1px solid white;
-  align-self: center;
 }
 
 /* Centers the whole structure and stacks the elements vertically */
@@ -214,7 +206,7 @@ body {
 
 
 /* --------------------------------------------------- */
-/* 8. FOOTER */
+/* 4. FOOTER */
 /* --------------------------------------------------- */
 
 .footer {
@@ -224,7 +216,7 @@ body {
 
 
 /* --------------------------------------------------- */
-/* 9. BASIC RESPONSIVENESS (Option A) */
+/* 5. BASIC RESPONSIVENESS (Option A) */
 /* --------------------------------------------------- */
 
 
@@ -260,7 +252,7 @@ body {
 
 
 /* --------------------------------------------------- */
-/* 10. FONTS */
+/* 6. FONTS */
 /* --------------------------------------------------- */
 
 .inknut-antiqua-light {
