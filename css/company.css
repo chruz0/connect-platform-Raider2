@@ -175,6 +175,17 @@ body {
   font-size: 32px;
   font-family: 'Inknut Antiqua';
   row-gap: 30px;
+  margin-left: 50px;
+}
+
+.profile-settings a {
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.profile-settings .nowhere:hover {
+  color: orange;
 }
 
 
